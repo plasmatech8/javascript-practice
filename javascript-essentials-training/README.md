@@ -7,6 +7,9 @@ Tutorial: https://www.linkedin.com/learning/javascript-essential-training-3/welc
   - [02. Basics](#02-basics)
     - [Script Tag](#script-tag)
     - [Standards](#standards)
+  - [03. Working with Data](#03-working-with-data)
+    - [Variables, Types, Operators](#variables-types-operators)
+    - [Arrays](#arrays)
 
 
 ## 01. Introduction
@@ -45,3 +48,30 @@ Use `defer` if you want the JS to be executed last.
 camelCase - variables
 CapitalCase - Classes
 ALLCAPS - CONSTANTS
+
+## 03. Working with Data
+
+### Variables, Types, Operators
+
+Anytime you create a variable, use var.
+
+If you assign a variable without a keyword, it will assume you are creating a global variable.
+
+Data Types:
+* Numeric
+* String
+* Boolean
+* null
+* undefined
+
+Basic operators: +, -, *, /
+Assignment operators: +=, -=, *=, /=, -- (before or after), ++  (before or after)
+
+Comparison operators: == (value equality), === (type and value equality), etc
+Logic operators: || (or), && (and)
+
+Ternary operator: `condition ? 'value_if_true' : 'value_if_false'`
+
+### Arrays
+
+See `script.js`.
