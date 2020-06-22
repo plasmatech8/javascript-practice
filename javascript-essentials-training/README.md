@@ -10,6 +10,12 @@ Tutorial: https://www.linkedin.com/learning/javascript-essential-training-3/welc
   - [03. Working with Data](#03-working-with-data)
     - [Variables, Types, Operators](#variables-types-operators)
     - [Arrays](#arrays)
+  - [04. Functions and Objects](#04-functions-and-objects)
+    - [Functions](#functions)
+    - [Variables](#variables)
+    - [Constructor functions](#constructor-functions)
+    - [Dot vs bracket notation](#dot-vs-bracket-notation)
+    - [Closures](#closures)
 
 
 ## 01. Introduction
@@ -64,14 +70,41 @@ Data Types:
 * null
 * undefined
 
-Basic operators: +, -, *, /
-Assignment operators: +=, -=, *=, /=, -- (before or after), ++  (before or after)
-
-Comparison operators: == (value equality), === (type and value equality), etc
-Logic operators: || (or), && (and)
-
 Ternary operator: `condition ? 'value_if_true' : 'value_if_false'`
 
 ### Arrays
 
 See `script.js`.
+
+## 04. Functions and Objects
+
+### Functions
+
+Types:
+* Named (`function myFunc(){...}`)
+* Anonymous (`function(){...}`)
+* Immediately invoked (`(function(){...})()`)
+
+### Variables
+
+Types:
+* var (function scope)
+* const (cannot be changed)
+* let (block scope, i.e. loop or if statement scope)
+
+### Constructor functions
+
+Functions can be used as constructors for an object.
+
+Note: it is better to use class definitions.
+
+### Dot vs bracket notation
+
+`course.title == course["title"]`
+
+Use brackets if the property name contains unusual characters.
+
+### Closures
+
+Closures return a function (like decorators).
+
