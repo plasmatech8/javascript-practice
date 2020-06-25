@@ -22,6 +22,8 @@ Tutorial: https://www.linkedin.com/learning/javascript-essential-training-3/welc
     - [Attributes](#attributes)
     - [Create Elements](#create-elements)
     - [CSS](#css)
+  - [06. JS Clock](#06-js-clock)
+  - [07. DOM Events](#07-dom-events)
 
 
 ## 01. Introduction
@@ -166,7 +168,8 @@ Element creation methods:
 
 The `style` attribute contains styles object.
 
-However, this is only the **inline** CSS properties and does not include CSS stylesheets.
+However, this is only the **inline** CSS properties and does not include CSS
+stylesheets.
 
 Changing CSS:
 * Change via properties: `element.style.color = "green"`
@@ -178,3 +181,20 @@ If the CSS property has a hyphen (-), then it is converted to camelCase.
 Inline styles override the CSS stylesheets.
 
 **IT IS BETTER TO USE CLASSES AND CSS SHEETS**
+
+## 06. JS Clock
+transition: transform .5s ease-in-out;
+A clock was created using SVG.
+
+
+There is a `g` tag used to hold the hour/minute/second arms. The `path` tags
+used as lines for the arm and a `clicle` tag is used to set the centre.
+
+The `transform: rotate(1deg)` style is used on the `g` to rotate the arm.
+
+There are just a few problems with the current design:
+* Hands move around a lot at the start.
+* If the browser throttles or stops, the time with change (not using the `Date` object).
+
+## 07. DOM Events
+
