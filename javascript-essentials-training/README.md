@@ -16,6 +16,12 @@ Tutorial: https://www.linkedin.com/learning/javascript-essential-training-3/welc
     - [Constructor functions](#constructor-functions)
     - [Dot vs bracket notation](#dot-vs-bracket-notation)
     - [Closures](#closures)
+  - [05. Changing DOM Elements](#05-changing-dom-elements)
+    - [Get Elements](#get-elements)
+    - [Properties](#properties)
+    - [Attributes](#attributes)
+    - [Create Elements](#create-elements)
+    - [CSS](#css)
 
 
 ## 01. Introduction
@@ -108,3 +114,67 @@ Use brackets if the property name contains unusual characters.
 
 Closures return a function (like decorators).
 
+## 05. Changing DOM Elements
+
+### Get Elements
+
+Elements:
+* The entire HTML document can be obtained using `window.document` or `document`.
+* `document.body`
+* `document.title`
+* `document.URL`
+
+DOM methods:
+* `document.getElementById`
+* `document.getElementByClassName`
+* `document.getElementByTagName`
+* etc...
+
+Query DOM methods (more powerful):
+* `document.querySelector` gets the first element that matches a query. i.e. `.main-nav a`
+* `document.querySelectorAll` gets the all elements that matches a query.
+
+### Properties
+
+Some properties:
+* `.innerHTML`
+* `.outerHTML`
+* `.className`
+* `.classList`
+
+Properties can be changed, i.e:
+* `.add` to add a new class to an element. i.e. `document.querySelector(".masthead").classList.add("new-class")`
+* `.toggle` to turn on/off a class. i.e. `document.querySelector(".masthead").classList.toggle("new-class")`
+* `.contains`
+
+### Attributes
+
+Attribute methods:
+* `element.hasAttribute`
+* `element.getAttribute`
+* `element.setAttribute`
+* `element.removeAttribute`
+
+### Create Elements
+
+Element creation methods:
+* `.createElement`
+* `.createTextNode`
+* `.appendChild`
+
+### CSS
+
+The `style` attribute contains styles object.
+
+However, this is only the **inline** CSS properties and does not include CSS stylesheets.
+
+Changing CSS:
+* Change via properties: `element.style.color = "green"`
+* Change via cssText: `element.style.cssText = "padding: 1em; color: green";`
+* Change via setAttribute: `element.setAttribute("style", "padding: 1em; color: green;")`
+
+If the CSS property has a hyphen (-), then it is converted to camelCase.
+
+Inline styles override the CSS stylesheets.
+
+**IT IS BETTER TO USE CLASSES AND CSS SHEETS**
