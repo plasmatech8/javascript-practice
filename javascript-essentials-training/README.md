@@ -24,6 +24,9 @@ Tutorial: https://www.linkedin.com/learning/javascript-essential-training-3/welc
     - [CSS](#css)
   - [06. JS Clock](#06-js-clock)
   - [07. DOM Events](#07-dom-events)
+    - [Events](#events)
+    - [Onclick event](#onclick-event)
+    - [Event listener](#event-listener)
 
 
 ## 01. Introduction
@@ -198,3 +201,46 @@ There are just a few problems with the current design:
 
 ## 07. DOM Events
 
+### Events
+
+Browser level:
+* Load (resource and dependents finished loading)
+* Error (resource failed to load)
+* Online/offline
+* Resize
+* window resize
+* scroll
+* etc...
+
+DOM level:
+* Focus (element clicked/tabbed to)
+* Blur (element loses focus)
+* Reset/Submit (forms)
+* Mouse events (click/mouseover/drag/drop/etc)
+* etc...
+
+Other events:
+* Media events (audio/playback)
+* Progress events (browser progress)
+* CSS transition events (transition start/run/end)
+* etc...
+
+### Onclick event
+
+If we are clicking on an `a` link tag or a form submit tag, passing a paremeter
+`e` and using `e.preventDefault();` will prevent normal behaviour.
+
+### Event listener
+
+An event listener can be used to have multiple functions on the same event.
+
+We can also put our function into an anonymous function to allow use to
+make a generic function to update the CTA element using `this`:
+```js
+function reveal(e, this){
+    e.preventDefault();
+    this.innerText = ALERT.classList.contains("hide") ? "Book Now!" : "Oops!" ;
+    ALERT.classList.toggle("hide");
+}
+CTA.addEventListener("click", function(e) { reveal(e, this) });
+```
