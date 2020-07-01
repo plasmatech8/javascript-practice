@@ -27,6 +27,7 @@ Tutorial: https://www.linkedin.com/learning/javascript-essential-training-3/welc
     - [Events](#events)
     - [Onclick event](#onclick-event)
     - [Event listener](#event-listener)
+  - [08. Typing Speed Project](#08-typing-speed-project)
 
 
 ## 01. Introduction
