@@ -28,6 +28,7 @@ Tutorial: https://www.linkedin.com/learning/javascript-essential-training-3/welc
     - [Onclick event](#onclick-event)
     - [Event listener](#event-listener)
   - [08. Typing Speed Project](#08-typing-speed-project)
+  - [09. Loops](#09-loops)
 
 
 ## 01. Introduction
@@ -257,3 +258,15 @@ This interval can be stopped using:
 clearInterval(interval);
 ```
 Note that we will use `interval = null;` if we want to completely remove the timer because if we do not remove the interval, we will accumulate processes.
+
+## 09. Loops
+
+Loops
+* For
+* While
+* Do while
+* Foreach
+
+Keywords
+* break
+* continue
