@@ -244,3 +244,15 @@ function reveal(e, this){
 }
 CTA.addEventListener("click", function(e) { reveal(e, this) });
 ```
+
+## 08. Typing Speed Project
+
+We can create an interval event using:
+```js
+interval = setInterval(runTimer, 10);
+```
+This interval can be stopped using:
+```js
+clearInterval(interval);
+```
+Note that we will use `interval = null;` if we want to completely remove the timer because if we do not remove the interval, we will accumulate processes.
