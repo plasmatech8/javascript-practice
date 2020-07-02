@@ -27,8 +27,9 @@ Tutorial: https://www.linkedin.com/learning/javascript-essential-training-3/welc
     - [Events](#events)
     - [Onclick event](#onclick-event)
     - [Event listener](#event-listener)
-  - [08. Typing Speed Project](#08-typing-speed-project)
+  - [08. Project: Typing Speed](#08-project-typing-speed)
   - [09. Loops](#09-loops)
+  - [10. Project: Automated Responsive Images Markup](#10-project-automated-responsive-images-markup)
 
 
 ## 01. Introduction
@@ -247,7 +248,7 @@ function reveal(e, this){
 CTA.addEventListener("click", function(e) { reveal(e, this) });
 ```
 
-## 08. Typing Speed Project
+## 08. Project: Typing Speed
 
 We can create an interval event using:
 ```js
@@ -270,3 +271,12 @@ Loops
 Keywords
 * break
 * continue
+
+## 10. Project: Automated Responsive Images Markup
+
+We will:
+* Make the images on a page not immediately downloaded
+* The appropriate image size will be downloaded depending on display area
+
+Note: There are better existing JavaScript solutions for this, but this is an
+example for how to use loops.
