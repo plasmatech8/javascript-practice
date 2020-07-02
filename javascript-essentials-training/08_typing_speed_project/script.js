@@ -17,7 +17,7 @@ function pad(n) {
 
 // Run a standard minute/second/hundredths timer:
 function runTimer(){
-    let currentTime = timer.reduce((a, b) => pad(a) + ":" + pad(b))
+    let currentTime = timer.reduce((a, b) => pad(a) + ":" + pad(b));
     theTimer.innerHTML = currentTime;
     timer[2]++;
     if (timer[2] >= 100){

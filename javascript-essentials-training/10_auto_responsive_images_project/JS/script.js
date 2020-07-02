@@ -4,7 +4,8 @@ const SIZES = {
     reason: "(max-width: 799px) 100vw, 372px",
     feature: "(max-width: 799px) 100vw, 558px",
     story: "(max-width: 799px) 100vw, 670px",
-}
+};
+
 /**
  * Returns an array of 'images/testimonials/bluepebble-2000.jpg 400w' for sizes
  * from 400 to 2000.
