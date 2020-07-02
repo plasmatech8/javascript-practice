@@ -34,6 +34,7 @@ Tutorial: https://www.linkedin.com/learning/javascript-essential-training-3/welc
     - [Troubleshooting](#troubleshooting)
     - [Linting](#linting)
     - [Minify](#minify)
+  - [12. Other](#12-other)
 
 
 ## 01. Introduction
@@ -316,3 +317,6 @@ You can use npm packages such as:
 When these tools may only support ES5 currently. ES6 has keywords such as const
 and let.
 
+## 12. Other
+
+Template straings are good: `${a} devided by ${b} is ${a/b}`
