@@ -30,6 +30,10 @@ Tutorial: https://www.linkedin.com/learning/javascript-essential-training-3/welc
   - [08. Project: Typing Speed](#08-project-typing-speed)
   - [09. Loops](#09-loops)
   - [10. Project: Automated Responsive Images Markup](#10-project-automated-responsive-images-markup)
+  - [11. Troubleshooting, Validation, Minification](#11-troubleshooting-validation-minification)
+    - [Troubleshooting](#troubleshooting)
+    - [Linting](#linting)
+    - [Minify](#minify)
 
 
 ## 01. Introduction
@@ -280,3 +284,35 @@ We will:
 
 Note: There are better existing JavaScript solutions for this, but this is an
 example for how to use loops.
+
+## 11. Troubleshooting, Validation, Minification
+
+### Troubleshooting
+
+1. Open browser console
+2. Check in text editor/IDE
+3. Print to stdout: `console.log`
+4. Open browser sources to make break points and follow code line-by-line
+5. Do stuff
+
+### Linting
+
+JSLint is an extremely strict linting standard (see jslint.com)
+
+JSHint is a slightly more lenient linting standard (see jshint.com).
+
+You can install a linter using `npm init`, `npm install eslint`,
+`npx eslint`, and setup your text editor. Edit .eslintrc
+
+### Minify
+
+You can use online tools to minify. `script.min.js`
+
+You can use npm packages such as:
+* minify-js
+* uglify-js
+* uglify-js-es6
+
+When these tools may only support ES5 currently. ES6 has keywords such as const
+and let.
+
