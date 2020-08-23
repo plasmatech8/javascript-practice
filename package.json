@@ -1,0 +1,23 @@
+{
+  "name": "mochatest",
+  "version": "1.0.0",
+  "description": "Simple app for testing",
+  "main": "app.js",
+  "scripts": {
+    "test": "npx mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plasmatech8/javascript-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plasmatech8/javascript-practice/issues"
+  },
+  "homepage": "https://github.com/plasmatech8/javascript-practice#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1"
+  }
+}
